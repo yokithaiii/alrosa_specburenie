@@ -1,0 +1,46 @@
+@import '_colors.scss';
+
+header.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 140px;
+  z-index: 100;
+}
+.l-header_wrapper {
+  height: 100%;
+}
+.l-header_logo {
+  max-width: 244px;
+  width: 100%;
+  img {
+    width: 244px;
+    height: 86px;
+    object-fit: cover;
+  }
+}
+.l-header_nav {
+  li {
+    margin-right: 30px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  a {
+    color: $white;
+  }
+}
+.l-header_btns {
+  li {
+    margin-left: 43px;
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+  .search-icon {
+    width: 20px;
+    height: 20px;
+    object-fit: cover;
+  }
+}
