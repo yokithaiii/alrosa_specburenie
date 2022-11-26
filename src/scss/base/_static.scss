@@ -1,0 +1,370 @@
+.l-content--wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding-bottom: 100px;
+}
+
+.l-content--detail {
+	margin-top: 60px;
+}
+
+.l-content--img {
+	padding-bottom: 100px;	
+}
+
+.l-content--left {
+  width: 100%;
+  margin-right: 132px;
+}
+
+.l-content_left--item {
+  margin-bottom: 84px;
+  &.item--text {
+    .l-content_left--title {
+      margin-bottom: 25px;
+    }
+  }
+  &.item--accordion {
+    .l-content_left--title {
+      margin-bottom: 30px;
+    }
+  }
+  &.item--static {
+    .l-content_left--title {
+      margin-bottom: 25px;
+    }
+  }
+  &.item--img {
+    width: 100%;
+    max-height: 411px;
+    height: 100%;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+.l-content--accordion {
+  background: #F7F7F7;
+  margin-bottom: 10px;
+  a.accordion-title {
+    padding: 34px 40px;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 32px;
+    color: #000000;
+    border: none;
+    &::before {
+      content: "";
+      right: 40px;
+      margin-top: 0;
+      width: 24px;
+      height: 3px;
+      background-color: $orange;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      right: 40px;
+      margin-top: 0;
+      width: 24px;
+      height: 3px;
+      background-color: $orange;
+      transform: rotate(90deg);
+      transition: .3s;
+    }
+  }
+  &.is-active a.accordion-title::after {
+    transform: rotate(0);
+  }
+  .accordion-content {
+    padding: 30px 40px;
+    border: none;
+  }
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.l-content_left--img {
+  margin-top: 26px;
+  margin-bottom: 40px;
+}
+
+.item--cards {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+}
+
+.l-content_left--card {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.l-item_cards--img {
+  width: 100%;
+  margin-right: 20px;
+}
+
+.l-item_cards--desc {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.cards_desc--fio {
+  margin-bottom: 5px;
+}
+
+.cards_desc--spec {
+  color: $gray;
+}
+
+.cards_desc--text {
+  margin-top: 30px;
+}
+
+ul.cards_desc--list {
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  li {
+    position: relative;
+    padding-left: 40px;
+    margin-bottom: 15px;
+    &::before {
+      content: '';
+      width: 30px;
+      height: 4px;
+      position: absolute;
+      left: 0;
+      top: 50%;
+      background-color: $orange;
+    }
+  }
+}
+
+.l-content_left--list {
+  margin-top: 32px;
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  li {
+    position: relative;
+    padding-left: 126px;
+    margin-bottom: 23px;
+    color: $gray;
+    &::before {
+      content: '';
+      width: 90px;
+      height: 4px;
+      position: absolute;
+      left: 0;
+      top: 50%;
+      background-color: $orange;
+    }
+  }
+}
+
+.item--partners {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+}
+
+.l-content_partners--img {
+  width: 100%;
+  img {
+    width: 100%;
+  }
+}
+
+.l-content_partners--desc {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.l-content_partnres--wrapper {
+  width: 100%;
+}
+
+.l-content_partners--cards {
+  margin-top: 25px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.l-content_partners-card {
+  img {
+    width: 100%;
+  }
+}
+.l-content_numbers--wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 86px;
+}
+.l-content_numbers--item {
+  display: grid;
+  max-width: 290px;
+  .l-content_numbers--row:last-child {
+    padding-left: 5px;
+  }
+}
+
+.item--button {
+  max-width: 163px;
+  width: 100%;
+  .orange-border-btn {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: $black;
+    i {
+      width: 16px;
+      height: 8px;
+      background-repeat: no-repeat;
+      background-position: center;
+      margin-top: 4px;
+      margin-left: 8px;
+      transform: rotate(180deg);
+    }
+  }
+}
+
+.item--table {
+  margin-top: 90px;
+  ul {
+    display: flex;
+    flex-direction: column;
+  }
+  li {
+    margin-bottom: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    span {
+      width: 50%;
+    }
+  }
+}
+
+.l-content_left--socials {
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+  svg.svg {
+    width: 48px;
+    height: 48px;
+  }
+  a {
+    margin-left:  20px;
+    color: $black;
+    text-decoration: underline;
+  }
+}
+
+.l-content_vacancies--wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  .l-content_left--item {
+    margin-bottom: 0;
+  }
+}
+
+.item--vacancies {
+  width: 100%;
+  padding: 30px 32px;
+  background: #F7F7F7;
+  .l-content_left--title {
+    display: flex;
+    flex-direction: column;
+    span:last-child {
+      color: $gray;
+    }
+  }
+}
+
+.l-content_vacancies--header {
+
+}
+
+.l-content_vacancies--body {
+  display: flex;
+  flex-direction: column;
+  margin-top: 43px;
+}
+
+.l-content_vacancies--footer {
+  margin-top: 60px;
+}
+
+.l-vacancies--title {
+
+}
+
+.l-vacancies--desc {
+  margin-top: 14px;
+}
+
+.l-vacancies--list {
+  max-height: 80px;
+  height: 100%;
+  margin-top: 15px;
+  overflow: hidden;
+  li {
+    position: relative;
+    padding-left: 40px;
+    margin-bottom: 15px;
+    &::before {
+      content: '';
+      width: 30px;
+      height: 4px;
+      position: absolute;
+      left: 0;
+      top: 50%;
+      background-color: $orange;
+    }
+  }
+  &.active {
+    max-height: 100%;
+    height: 100%;
+  }
+}
+
+.l-vacancies--more {
+  margin-top: 26px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  a {
+    color: $black;
+  }
+  i {
+    width: 16px;
+    height: 16px;
+    margin-left: 8px;
+    transition: .3s;
+  }
+  &.active i {
+    transform: rotate(180deg);
+  }
+}

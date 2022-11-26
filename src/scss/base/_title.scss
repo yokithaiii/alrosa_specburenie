@@ -1,0 +1,28 @@
+.l-content {
+  margin-top: 97px;
+}
+
+.l-content--title {
+  margin-bottom: 23px;
+}
+
+.l-content--breadcrumbs {
+  ul {
+    display: flex;
+    align-items: center;
+  }
+  li {
+    margin-right: 5px;
+  }
+  li:last-child {
+    a {
+      color: $orange;
+    }
+  }
+  a {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+    color: $black;
+  }
+}

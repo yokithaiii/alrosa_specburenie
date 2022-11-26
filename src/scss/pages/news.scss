@@ -1,0 +1,154 @@
+@import '../base/_colors.scss';
+
+section.news {
+  
+}
+
+.l-news_body {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.l-news_content--wrapper {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 20px;
+  row-gap: 80px;
+}
+
+.l-news_item {
+  .l-news_item--img {
+    width: 100%;
+  }
+  .l-news_item--content {
+    margin-top: 20px;
+  }
+  .l-news_item--date {
+    span {
+      color: $gray;
+    }
+  }
+  .l-news_item--title {
+    margin-top: 10px;
+  }
+  
+  &.news_item--middle {
+    position: relative;
+
+    .l-news_item--img {
+      height: 100%;
+      width: 100%;
+      img {
+        height: 100%;
+      }
+    }
+    
+    .l-news_item--content {
+      width: 100%;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      padding: 0 30px 20px 30px;
+      margin-top: 0;
+    }
+    
+    .l-news_item--date {
+      span {
+        color: $gray;
+      }
+    }
+    
+    .l-news_item--title {
+      margin-top: 10px;
+    }
+  }
+}
+
+.l-news_content--more {
+  display: flex;
+  justify-content: center;
+  margin-top: 123px;
+}
+
+.l-newsdetail {
+  margin-top: 60px;
+  padding-bottom: 120px;
+} 
+
+.l-newsdetail--wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.l-newsdetail--left {
+  max-width: 860px;
+  width: 100%;
+  margin-right: 130px;
+}
+
+.l-newsdetail--right {
+  max-width: 310px;
+  width: 100%;
+}
+
+.l-newsdetail_left--item {
+
+}
+
+.l-newsdetail_left--img {
+
+}
+
+.l-newsdetail_left--title {
+  margin-top: 32px;
+}
+
+.l-newsdetail_left--date {
+  margin-top: 10px;
+  span {
+    color: $gray;
+  }
+}
+
+.l-newsdetail_left--anounce {
+  margin-top: 55px;
+}
+
+.l-newsdetail_left--text {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.l-newsdetail_left--slider {
+  margin-top: 15px;
+}
+
+.swiper-thumbs {
+  margin-top: 20px;
+  .swiper-slide {
+    cursor: pointer;
+  }
+}
+
+.swiper-slide-thumb-active {
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+  }
+}
+
+.l-right_news--more {
+  margin-top: 30px;
+  a {
+    display: inline-block;
+    color: $black;
+  }
+}

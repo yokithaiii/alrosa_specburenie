@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+@@include('components/page-blocks/_head.html')
+
+<body>
+	@@include('components/page-blocks/_header_bl.html')
+	<main class="main">
+    <section>
+			<div class="l-container">
+				<div class="l-content">
+					@@include('components/bem-blocks/_title.html', {
+            title: 'буровые работы',
+            bread: 'Буровые работы'
+          })
+					<div class="l-content--detail">
+						<div class="l-content--img">
+							<img src="https://via.placeholder.com/1300x400" alt="">
+						</div>
+            <div class="l-pworks--wrapper">
+              <div class="l-pworks--title">
+                <span class="fs40">
+                  Реализованные проекты
+                </span>
+              </div>
+              <div class="l-pworks--items">
+                <div class="l-pworks--card">
+                  <div class="l-pworks_card--left">
+                    <div class="l-pworks_card--year">
+                      <span class="fs16-medium">Год реализации</span>
+                    </div>
+                    <div class="l-pworks_card--name">
+                      <span class="fs40">Название проекта</span>
+                    </div>
+                    <div class="l-pworks_card--desc">
+                      <span class="fs18-regular">Pellentesque porta netus senectus varius vulputate. Quisque integer curabitur sagittis et augue. Eget vel interdum nibh dui urna ut. Potenti viverra leo nisi mattis lectus mattis sed enim at.</span>
+                    </div>
+                    <div class="l-pworks_card--list">
+                      <ul>
+                        <li class="fs18-regular">Lorem ipsum dolor sit amet consectetur</li>
+                        <li class="fs18-regular">Lorem ipsum dolor sit amet consectetur</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="l-pworks_card--right">
+                    <img src="https://via.placeholder.com/640x411" alt="">
+                  </div>
+                </div>
+                <div class="l-pworks--card">
+                  <div class="l-pworks_card--left">
+                    <div class="l-pworks_card--year">
+                      <span class="fs16-medium">Год реализации</span>
+                    </div>
+                    <div class="l-pworks_card--name">
+                      <span class="fs40">Название проекта</span>
+                    </div>
+                    <div class="l-pworks_card--desc">
+                      <span class="fs18-regular">Pellentesque porta netus senectus varius vulputate. Quisque integer curabitur sagittis et augue. Eget vel interdum nibh dui urna ut. Potenti viverra leo nisi mattis lectus mattis sed enim at.</span>
+                    </div>
+                    <div class="l-pworks_card--list">
+                      <ul>
+                        <li class="fs18-regular">Lorem ipsum dolor sit amet consectetur</li>
+                        <li class="fs18-regular">Lorem ipsum dolor sit amet consectetur</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="l-pworks_card--right">
+                    <img src="https://via.placeholder.com/640x411" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+					</div>
+				</div>
+			</div>
+		</section>
+  </main>
+	@@include('components/page-blocks/_footer.html')
+	@@include('components/page-blocks/_scripts.html')
+</body>
+
+</html>

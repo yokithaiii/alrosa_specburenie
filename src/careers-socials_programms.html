@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+@@include('components/page-blocks/_head.html')
+
+<body>
+	@@include('components/page-blocks/_header_bl.html')
+	<main class="main">
+    <section>
+			<div class="l-container">
+				<div class="l-content">
+					@@include('components/bem-blocks/_title.html', {
+            title: 'социальные программы для сотрудников',
+            bread: 'Социальные программы для сотрудников'
+          })
+					<div class="l-content--detail">
+						<div class="l-content--img">
+							<img src="https://via.placeholder.com/1300x400" alt="">
+						</div>
+						<div class="l-content--wrapper">
+							<div class="l-content--left">
+								<div class="l-content_left--item item--text">
+									<div class="l-content_left--title">
+										<span class="fs40">
+											Перечень социальных программ
+										</span>
+									</div>
+									<div class="l-content_left--desc">
+										<span class="fs18-regular">
+											Lorem ipsum dolor sit amet consectetur. Pellentesque porta netus senectus varius vulputate. Quisque integer curabitur sagittis et augue. Eget vel interdum nibh dui urna ut. Potenti viverra leo nisi mattis lectus mattis sed enim at.
+										</span>
+									</div>
+								</div>
+                <div class="l-content_left--item item--accordion">
+									<div class="l-content_left--desc">
+										<ul class="accordion" data-accordion data-multi-expand="true" data-allow-all-closed="true">
+											<li class="l-content--accordion" data-accordion-item>
+												<a href="#" class="accordion-title">Accordion 1</a>
+												<div class="accordion-content" data-tab-content >
+													<span class="fs18-regular">
+														Lorem ipsum dolor sit amet consectetur. Pellentesque porta netus senectus varius vulputate. Quisque integer curabitur sagittis et augue. Eget vel interdum nibh dui urna ut. Potenti viverra leo nisi mattis lectus mattis sed enim at.
+													</span>
+                          <br>
+                          <br>
+                          <span class="fs18-regular">
+														Lorem ipsum dolor sit amet consectetur. Pellentesque porta netus senectus varius vulputate. Quisque integer curabitur sagittis et augue. Eget vel interdum nibh dui urna ut. Potenti viverra leo nisi mattis lectus mattis sed enim at.
+													</span>
+                          <div class="l-content_left--list">
+                            <ul>
+                              <li class="fs18-regular">Lorem ipsum dolor sit amet consectetur. Pellentesque porta netus senectus varius vulputate.</li>
+                              <li class="fs18-regular">Lorem ipsum dolor sit amet consectetur. Pellentesque porta netus senectus varius vulputate.</li>
+                              <li class="fs18-regular">Lorem ipsum dolor sit amet consectetur. Pellentesque porta netus senectus varius vulputate.</li>
+                            </ul>
+                          </div>
+												</div>
+											</li>
+											<li class="l-content--accordion" data-accordion-item>
+												<a href="#" class="accordion-title">Accordion 2</a>
+												<div class="accordion-content" data-tab-content>
+													<span class="fs18-regular">
+														Lorem ipsum dolor sit amet consectetur. Pellentesque porta netus senectus varius vulputate. Quisque integer curabitur sagittis et augue. Eget vel interdum nibh dui urna ut. Potenti viverra leo nisi mattis lectus mattis sed enim at.
+													</span>
+												</div>
+											</li>
+											<li class="l-content--accordion" data-accordion-item>
+												<a href="#" class="accordion-title">Accordion 3</a>
+												<div class="accordion-content" data-tab-content>
+													<span class="fs18-regular">
+														Lorem ipsum dolor sit amet consectetur. Pellentesque porta netus senectus varius vulputate. Quisque integer curabitur sagittis et augue. Eget vel interdum nibh dui urna ut. Potenti viverra leo nisi mattis lectus mattis sed enim at.
+													</span>
+												</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							@@include('components/bem-blocks/_rightside.html')
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+  </main>
+	@@include('components/page-blocks/_footer.html')
+	@@include('components/page-blocks/_scripts.html')
+</body>
+
+</html>

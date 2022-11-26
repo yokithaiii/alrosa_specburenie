@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+@@include('components/page-blocks/_head.html')
+
+<body>
+	@@include('components/page-blocks/_header_bl.html')
+	<main class="main">
+    <section>
+			<div class="l-container">
+				<div class="l-content">
+					@@include('components/bem-blocks/_title.html', {
+            title: 'партнеры и клиенты',
+            bread: 'партнеры и клиенты'
+          })
+					<div class="l-content--detail">
+						<div class="l-content--img">
+							<img src="https://via.placeholder.com/1300x400" alt="">
+						</div>
+						<div class="l-content--wrapper">
+							<div class="l-content--left">
+								<div class="l-content_left--item item--text">
+									<div class="l-content_left--title">
+										<span class="fs40">
+											Заголовок
+										</span>
+									</div>
+                  <div class="l-content_left--desc">
+										<span class="fs18-regular">
+											Lorem ipsum dolor sit amet consectetur. Pellentesque porta netus senectus varius vulputate. Quisque integer curabitur sagittis et augue. Eget vel interdum nibh dui urna ut. Potenti viverra leo nisi mattis lectus mattis sed enim at.
+										</span>
+									</div>
+								</div>
+                <div class="l-content_left--item item--partners">
+                  <div class="l-content_partners--img">
+                    <img src="https://via.placeholder.com/310x250" alt="">
+                  </div>
+                  <div class="l-content_partners--desc">
+                    <span class="fs22">Заголовок</span>
+                    <span class="fs16-regular">Lorem ipsum dolor sit amet consectetur. Pellentesque porta netus senectus varius vulputate. Quisque integer curabitur sagittis et augue. Eget vel interdum nibh dui urna ut. Potenti viverra leo nisi mattis lectus mattis sed enim at.</span>
+                  </div>
+                </div>
+                <div class="l-content_left--item item--partners">
+                  <div class="l-content_partnres--wrapper">
+                    <div class="l-content_left--title">
+                      <span class="fs40">
+                        Заголовок
+                      </span>
+                    </div>
+                    <div class="l-content_partners--cards">
+                      <div class="l-content_partners-card">
+                        <img src="https://via.placeholder.com/210x180" alt="">
+                      </div>
+                      <div class="l-content_partners-card">
+                        <img src="https://via.placeholder.com/210x180" alt="">
+                      </div>
+                      <div class="l-content_partners-card">
+                        <img src="https://via.placeholder.com/210x180" alt="">
+                      </div>
+                      <div class="l-content_partners-card">
+                        <img src="https://via.placeholder.com/210x180" alt="">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+							</div>
+							@@include('components/bem-blocks/_rightside.html')
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+  </main>
+	@@include('components/page-blocks/_footer.html')
+	@@include('components/page-blocks/_scripts.html')
+</body>
+
+</html>
