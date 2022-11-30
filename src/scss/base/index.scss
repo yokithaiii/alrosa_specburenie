@@ -34,11 +34,6 @@ section.banner {
 
 //news
 
-section.news {
-  padding-top: 130px;
-  padding-bottom: 80px;
-}
-
 .l-news_wrapper {
   display: flex;
   align-items: center;
@@ -137,8 +132,6 @@ section.news {
 //map
 
 section.map {
-  padding-top: 130px;
-  padding-bottom: 80px;
   .section_title {
     max-width: 440px;
     margin-bottom: 30px;
@@ -150,7 +143,6 @@ section.map {
 
 //services
 section.services {
-  padding-top: 130px;
   .accordion-content {
     padding: 0;
     border: none;
@@ -313,9 +305,6 @@ section.services {
 }
 
 //licenses
-section.licenses {
-  padding-top: 120px;
-}
 
 .section_descr {
   max-width: 530px;
@@ -327,10 +316,6 @@ section.licenses {
 }
 
 //contacts
-section.contacts {
-  padding-top: 100px;
-}
-
 .l-contacts_content {
   margin-top: 45px;
 }
@@ -366,11 +351,6 @@ section.contacts {
 }
 
 //form
-section.form {
-  padding-top: 120px;
-  padding-bottom: 120px;
-}
-
 .l-form_wrapper {
   margin-top: 80px;
 }
@@ -465,4 +445,131 @@ section.form {
     border: none;
     cursor: pointer;
   }
+}
+
+
+@media screen and (max-width: 1300px) {
+
+}
+
+@media screen and (max-width: 1060px) {
+  .l-banner_img {
+    padding-top: 90px;
+    height: 860px;
+  }
+}
+
+@media screen and (max-width: 967px) {
+
+}
+
+@media screen and (max-width: 768px) {
+  .l-banner_content {
+    margin-top: 228px;
+  }
+  .l-banner_content--title {
+    margin-bottom: 12px;
+  }
+  .l-banner_content--desc {
+    margin-bottom: 65px;
+  }
+
+  //news
+  .l-news_wrapper {
+    flex-direction: column;
+    gap: 60px;
+  }
+  .l-news_left {
+    width: 100%;
+  }
+  .l-news_grid--container {
+    grid-template-columns: 1fr 1fr;
+  }
+  .l-news_card:first-child {
+    .l-news_card--img {
+      height: 100%;
+      img {
+        height: 100%;
+      }
+    }
+  }
+
+  //services
+  .l-services_list--top {
+    display: grid;
+    row-gap: 40px;
+  }
+  .l-services_list--title {
+    grid-column: 1/4;
+    grid-row: 1/1;
+  }
+  .l-services_list--desc {
+    grid-column: 4/8;
+    grid-row: 1/3;
+    &.active {
+      grid-row: 1/8;
+      max-height: 800px;
+    }
+  }
+  .l-services_list--btn {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+
+  //licenses
+  section.licences {
+    .section_title {
+      max-width: 440px;
+    }
+  }
+
+  //contacts
+  .l-contacts_wrapper {
+    display: grid;
+    row-gap: 25px;
+    column-gap: 85px;
+  }
+  .l-contacts_el {
+    max-width: unset;
+  }
+  .l-contacts_el:first-child {
+    grid-column: 1/3 span;
+    grid-row: 1/1;
+  }
+  .l-contacts_el:nth-child(2) {
+    grid-column: 1/4;
+    grid-row: 2/2;
+  }
+  .l-contacts_el:nth-child(3) {
+    grid-column: 4/5;
+    grid-row: 2/2;
+  }
+  .l-contacts_el:last-child {
+    grid-column: 5/8;
+    grid-row: 2/2;
+  }
+
+  //form
+  section.form {
+    .section_title {
+      max-width: 600px;
+    }
+  }
+  .l-form_fields {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+  }
+  .l-form_left {
+    margin-right: 0;
+  }
+
+}
+
+@media screen and (max-width: 620px) {
+
+}
+
+@media screen and (max-width: 425px) {
+
 }

@@ -26,6 +26,20 @@ const swiperLicense = new Swiper('.swiper-license', {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
+  breakpoints: {
+    425: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    620: {
+      slidesPerView: 4,
+      spaceBetween: 20,
+    },
+    1060: {
+      slidesPerView: 6,
+      spaceBetween: 20,
+    },
+  },
 });
 
 //newsdetail thumbs
@@ -96,4 +110,9 @@ function openFadeDetail2(el) {
   let btnTarget = el.currentTarget;
   btnTarget.classList.toggle("active");
   btnTarget.parentElement.children[2].classList.toggle("active");
+}
+
+function openTestNav() {
+  document.querySelector('.test--nav').classList.toggle('test-active');
+  document.querySelector('.test--trigger').classList.toggle('test-active');
 }

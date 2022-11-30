@@ -1,9 +1,5 @@
 @import '../base/_colors.scss';
 
-section.about {
-  margin-top: 107px;
-}
-
 .l-about_row {
   padding-bottom: 110px;
 }
@@ -52,10 +48,6 @@ section.about {
   flex-direction: column;
 }
 
-.l-about_content--title {
-
-}
-
 .l-about_content--desc {
   margin-top: 4px;
 }
@@ -66,10 +58,6 @@ section.about {
     display: inline-block;
     color: $black;
   }
-}
-
-.l-about_list {
-
 }
 
 .l-about_list--title {
