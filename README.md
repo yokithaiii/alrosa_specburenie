@@ -1,4 +1,8 @@
 АЛРОСА СПЕЦБУРЕНИЕ
+
+## Страницы:
+[index.html](/build/index.html)
+
 # Easy-webdev-startpack
 ## Что есть в сборке:
 - компилятор для препроцессора scss/sass;
