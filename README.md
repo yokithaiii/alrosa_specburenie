@@ -2,6 +2,26 @@
 
 ## Страницы:
 [index.html](/build/index.html)
+[about-achievements.html](/build/about-achievements.html)
+[about-licenses.html](/build/about-licenses.html)
+[about-missions.html](/build/about-missions.html)
+[about-partners.html](/build/about-partners.html)
+[about-social_life.html](/build/about-social_life.html)
+[about-specialists.html](/build/about-specialists.html)
+[about-structure.html](/build/about-structure.html)
+[about.html](/build/about.html)
+[careers-culture.html](/build/careers-culture.html)
+[careers-socials_programms.html](/build/careers-socials_programms.html)
+[careers-specialists.html](/build/careers-specialists.html)
+[careers-vacancies.html](/build/careers-vacancies.html)
+[careers.html](/build/careers.html)
+[contacts.html](/build/contacts.html)
+[news-detail.html](/build/news-detail.html)
+[news.html](/build/news.html)
+[presentation.html](/build/presentation.html)
+[projects-works.html](/build/projects-works.html)
+[projects.html](/build/projects.html)
+[services.html](/build/services.html)
 
 # Easy-webdev-startpack
 ## Что есть в сборке:
