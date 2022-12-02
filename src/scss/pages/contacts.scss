@@ -27,3 +27,19 @@
     margin-top: 40px;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .l-contacts--info {
+    display: grid;
+    row-gap: 25px;
+    column-gap: 85px;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .l-contacts--info {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+  }
+}

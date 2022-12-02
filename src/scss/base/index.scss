@@ -572,7 +572,11 @@ section.services {
 }
 
 @media screen and (max-width: 620px) {
-
+  .l-contacts_wrapper {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+  }
 }
 
 @media screen and (max-width: 425px) {
@@ -613,11 +617,6 @@ section.services {
   }
 
   //contacts
-  .l-contacts_wrapper {
-    display: flex;
-    flex-direction: column;
-    row-gap: 20px;
-  }
   .l-contacts_map {
     margin-top: 30px;
     height: 200px;

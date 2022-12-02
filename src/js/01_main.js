@@ -51,6 +51,24 @@ var swiperThumbs = new Swiper(".swiper-thumbs", {
   spaceBetween: 20,
   slidesPerView: 8,
   watchSlidesProgress: true,
+  breakpoints: {
+    320: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    425: {
+      slidesPerView: 4,
+      spaceBetween: 20,
+    },
+    620: {
+      slidesPerView: 6,
+      spaceBetween: 20,
+    },
+    1060: {
+      slidesPerView: 8,
+      spaceBetween: 20,
+    },
+  },
 });
 //newsdetail
 const swiperNewsDetail = new Swiper('.swiper-newsdetail', {
@@ -73,6 +91,24 @@ var swiperThumbs = new Swiper(".swiper-thumbs-presentation", {
   spaceBetween: 20,
   slidesPerView: 8,
   watchSlidesProgress: true,
+  breakpoints: {
+    320: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    425: {
+      slidesPerView: 4,
+      spaceBetween: 20,
+    },
+    620: {
+      slidesPerView: 6,
+      spaceBetween: 20,
+    },
+    1060: {
+      slidesPerView: 8,
+      spaceBetween: 20,
+    },
+  },
 });
 //presentation
 const swiperPresentation = new Swiper('.swiper-presentation', {
@@ -87,6 +123,42 @@ const swiperPresentation = new Swiper('.swiper-presentation', {
   },
   thumbs: {
     swiper: swiperThumbs,
+  },
+});
+
+//pworks thumbs
+var pworksThumbs = new Swiper(".swiper-thumbs-pworks", {
+  spaceBetween: 20,
+  slidesPerView: 6,
+  watchSlidesProgress: true,
+  breakpoints: {
+    425: {
+      slidesPerView: 4,
+      spaceBetween: 20,
+    },
+    620: {
+      slidesPerView: 4,
+      spaceBetween: 20,
+    },
+    1060: {
+      slidesPerView: 6,
+      spaceBetween: 20,
+    },
+  },
+});
+//presentation
+const swiperPworks = new Swiper('.swiper-pworks', {
+  loop: true,
+  slidesPerView: 1,
+  pagination: {
+    el: '.swiper-pagination',
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  thumbs: {
+    swiper: pworksThumbs,
   },
 });
 

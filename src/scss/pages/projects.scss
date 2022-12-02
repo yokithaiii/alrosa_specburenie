@@ -66,17 +66,49 @@
 }
 
 .l-pworks--card {
+  position: relative;
   padding: 70px 30px 70px 37px;
   background: #F7F7F7;
   display: flex;
   justify-content: space-between;
   gap: 90px;
+  .swiper-thumbs-pworks {
+    height: 60px;
+    .swiper-wrapper {
+      justify-content: center;
+    }
+    .swiper-slide {
+      img {
+        height: 100%;
+        width: 100%;
+      }
+    }
+  }
 }
 
 .l-pworks_card--left {
   display: flex;
   flex-direction: column;
 }
+
+.l-pworks_card--right {
+  max-width: 640px;
+}
+
+.l-pworks-navigation {
+  width: auto;
+  height: 50px;
+  position: absolute;
+  bottom: 70px;
+  margin-top: 40px;
+  left: 37px;
+  right: 0;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
 
 .l-pworks_card--year {
   span {
@@ -94,6 +126,7 @@
 
 .l-pworks_card--list {
   margin-top: 20px;
+  padding-bottom: 50px;
   ul {
     display: flex;
     flex-direction: column;
@@ -111,5 +144,80 @@
       top: 50%;
       background-color: $orange;
     }
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .l-projects_list--top {
+    column-gap: 20px;
+    .l-services_list--title {
+      max-width: 240px;
+    }
+  }
+  .l-services_list--btn {
+    a {
+      white-space: nowrap;
+    }
+  }
+
+  .l-pworks--card {
+    gap: 30px;
+  }
+  .l-pworks_card--right {
+    max-width: 560px;
+    display: flex;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 1240px) {
+  .l-pworks_card--right {
+    max-width: 440px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .l-pworks--card {
+    flex-direction: column;
+  }
+  .l-pworks_card--right {
+    max-width: unset;
+    padding-bottom: 80px;
+  }
+  .l-pworks-navigation {
+    bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    justify-content: center;
+  }
+  .l-pworks_card--list {
+    padding-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .l-projects_list--top {
+    display: grid;
+    row-gap: 40px;
+  }
+  .l-pworks--card {
+    padding: 40px 30px;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .l-projects_list--top {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    align-items: flex-start;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .l-pworks--card {
+    padding: 30px 20px 40px 20px;
   }
 }

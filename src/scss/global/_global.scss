@@ -234,6 +234,10 @@ section.banner {
 
 
 @media screen and (max-width: 1300px) {
+	.fs50 {
+		font-size: 40px;
+		line-height: 60px;
+	}
 	.l-container {
 		max-width: 1300px;
 		padding: 0 30px;
