@@ -155,3 +155,24 @@ section {
     border: none;
   }
 }
+
+@media screen and (max-width: 425px) {
+  section.banner {
+    .swiper-pagination-bullet {
+      width: 12px;
+      height: 12px;
+    }
+    .swiper-pagination {
+      margin: 0 25px;
+    }
+  }
+  section.licenses {
+    .swiper-pagination-bullet {
+      width: 12px;
+      height: 12px;
+    }
+    .swiper-pagination {
+      margin: 0 25px;
+    }
+  }
+}

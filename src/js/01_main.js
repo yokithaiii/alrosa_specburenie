@@ -27,6 +27,10 @@ const swiperLicense = new Swiper('.swiper-license', {
     prevEl: '.swiper-button-prev',
   },
   breakpoints: {
+    320: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
     425: {
       slidesPerView: 2,
       spaceBetween: 20,
