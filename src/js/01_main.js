@@ -192,3 +192,19 @@ function openTestNav() {
   document.querySelector('.test--nav').classList.toggle('test-active');
   document.querySelector('.test--trigger').classList.toggle('test-active');
 }
+
+//modals
+const modalCallMe = new HystModal({
+  linkAttributeName: "data-hystmodal",
+  // настройки (не обязательно), см. API
+});
+const modalVacancies = new HystModal({
+  linkAttributeName: "data-hystmodal",
+  // настройки (не обязательно), см. API
+});
+
+//customize input[type="file"]
+$(".inputfile").on("change", function () {
+  let file = this.files[0];
+  $(this).next().html(file.name);
+});

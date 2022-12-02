@@ -162,10 +162,41 @@ h6 {
 
 a {
 	text-decoration: none;
+	&:hover {
+		color: unset;
+	}
+	&:focus {
+		color: unset;
+	}
 }
 
 img {
 	object-fit: cover;
+}
+
+input[type="checkbox"] {
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: #fff;
+  margin: 0;
+	padding: 0;
+	position: relative;
+	cursor: pointer;
+	&:checked::before {
+		display: block;
+	}
+	&::before {
+		display: none;
+		content: "";
+		position: absolute;
+		left: 2px;
+    top: 3px;
+		width: 17px;
+    height: 13px;
+		background-image: url("data:image/svg+xml;charset=utf8, %3Csvg width='17' height='13' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M17 2.154L6.394 13 0 6.462l2.106-2.154 4.288 4.384 4.25-4.346L14.894 0 17 2.154z' fill='%23000'/%3E%3C/svg%3E");
+		background-repeat: no-repeat;
+		background-position: center;
+	}
 }
 
 .orange-btn {
@@ -180,6 +211,12 @@ img {
   border: 2px solid #FF9704;
   border-radius: 100px;
   color: $white;
+	transition: .3s;
+	&:hover {
+		border-color: #FF9704;
+		background: #FF9704;
+		color: $white;
+	}
 }
 
 main {

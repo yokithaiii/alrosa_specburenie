@@ -52,6 +52,24 @@
 .--svg__arrow-right-after::after {
     content:'';
 }
+.--svg__checked,.--svg__checked-before::before,.--svg__checked-after::after{
+    background-image: url("data:image/svg+xml;charset=utf8, %3Csvg width='17' height='13' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M17 2.154L6.394 13 0 6.462l2.106-2.154 4.288 4.384 4.25-4.346L14.894 0 17 2.154z' fill='%23000'/%3E%3C/svg%3E");
+}
+.--svg__checked-before::before {
+    content:'';
+}
+.--svg__checked-after::after {
+    content:'';
+}
+.--svg__close-modal,.--svg__close-modal-before::before,.--svg__close-modal-after::after{
+    background-image: url("data:image/svg+xml;charset=utf8, %3Csvg width='48' height='48' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_387_5983)'%3E%3Cpath d='M14.572 16.458l1.886-1.886L24 22.115l7.543-7.543 1.885 1.886L25.886 24l7.542 7.543-1.885 1.885L24 25.886l-7.542 7.542-1.886-1.885L22.115 24l-7.543-7.542z' fill='%23000'/%3E%3Ccircle cx='24' cy='24' r='22.5' stroke='%23FF9704' stroke-width='3'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_387_5983'%3E%3Cpath fill='%23fff' transform='rotate(-180 24 24)' d='M0 0h48v48H0z'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E");
+}
+.--svg__close-modal-before::before {
+    content:'';
+}
+.--svg__close-modal-after::after {
+    content:'';
+}
 .--svg__email-icon-bl,.--svg__email-icon-bl-before::before,.--svg__email-icon-bl-after::after{
     background-image: url("data:image/svg+xml;charset=utf8, %3Csvg width='24' height='25' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12 22.106a9.67 9.67 0 01-3.875-.788 10.124 10.124 0 01-3.187-2.15 10.125 10.125 0 01-2.15-3.187A9.67 9.67 0 012 12.106a9.64 9.64 0 01.788-3.887 10.164 10.164 0 012.15-3.175 10.14 10.14 0 013.187-2.15A9.681 9.681 0 0112 2.105a9.65 9.65 0 013.887.787 10.178 10.178 0 013.175 2.151 10.164 10.164 0 012.15 3.175A9.64 9.64 0 0122 12.106v1.45c0 .984-.337 1.821-1.012 2.512-.675.692-1.505 1.038-2.488 1.038-.6 0-1.158-.133-1.675-.4a3.752 3.752 0 01-1.275-1.05 4.97 4.97 0 01-3.55 1.45c-1.383 0-2.562-.487-3.537-1.463C7.488 14.67 7 13.49 7 12.106c0-1.383.488-2.562 1.463-3.538.975-.974 2.154-1.462 3.537-1.462s2.563.488 3.538 1.462c.975.976 1.462 2.155 1.462 3.538v1.45c0 .484.15.863.45 1.137.3.276.65.413 1.05.413s.75-.137 1.05-.413c.3-.274.45-.653.45-1.137v-1.45c0-2.183-.788-4.062-2.363-5.638C16.062 4.894 14.183 4.106 12 4.106c-2.183 0-4.063.788-5.638 2.362C4.787 8.044 4 9.923 4 12.106c0 2.184.787 4.063 2.362 5.637C7.937 19.32 9.817 20.106 12 20.106h5v2h-5zm0-7c.833 0 1.542-.291 2.125-.875A2.893 2.893 0 0015 12.106c0-.833-.292-1.541-.875-2.125A2.893 2.893 0 0012 9.106c-.833 0-1.542.292-2.125.875A2.893 2.893 0 009 12.106c0 .834.292 1.542.875 2.125a2.893 2.893 0 002.125.875z' fill='%235A5A5A'/%3E%3C/svg%3E");
 }
@@ -167,6 +185,24 @@
     content:'';
 }
 .--svg__search-after::after {
+    content:'';
+}
+.--svg__skrepka,.--svg__skrepka-before::before,.--svg__skrepka-after::after{
+    background-image: url("data:image/svg+xml;charset=utf8, %3Csvg width='15' height='21' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M8.237 2.088a3.566 3.566 0 016.176 3.566L8.578 15.76a2.593 2.593 0 01-4.492-2.593l4.62-8.001a.648.648 0 111.122.648L5.21 13.815a1.297 1.297 0 002.246 1.297L13.29 5.005a2.269 2.269 0 10-3.93-2.269L2.39 14.808a3.242 3.242 0 005.615 3.241l5.754-9.966a.648.648 0 111.123.649l-5.754 9.966a4.538 4.538 0 01-7.86-4.539L8.236 2.088z' fill='%23000'/%3E%3C/svg%3E");
+}
+.--svg__skrepka-before::before {
+    content:'';
+}
+.--svg__skrepka-after::after {
+    content:'';
+}
+.--svg__success,.--svg__success-before::before,.--svg__success-after::after{
+    background-image: url("data:image/svg+xml;charset=utf8, %3Csvg width='24' height='24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm4.59-12.42L10 14.17l-2.59-2.58L6 13l4 4 8-8-1.41-1.42z' fill='%2300FF19'/%3E%3C/svg%3E");
+}
+.--svg__success-before::before {
+    content:'';
+}
+.--svg__success-after::after {
     content:'';
 }
 .--svg__tel-icon-bl,.--svg__tel-icon-bl-before::before,.--svg__tel-icon-bl-after::after{
