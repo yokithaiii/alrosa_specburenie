@@ -17,6 +17,8 @@ const swiperBanner = new Swiper('.swiper-banner', {
 //license
 const swiperLicense = new Swiper('.swiper-license', {
   loop: true,
+  slidesPerGroup: 1,
+  loopFillGroupWithBlank: true,
   slidesPerView: 6,
   spaceBetween: 20,
   pagination: {
