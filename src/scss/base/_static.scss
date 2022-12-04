@@ -7,6 +7,7 @@
   height: 400px;
   img {
     height: 100%;
+    width: 100%;
   }
 }
 .l-content--wrapper {
@@ -143,6 +144,10 @@
 	.l-item_cards--img {
 		width: 100%;
     margin-right: 20px;
+    height: 595px;
+    img {
+      height: 100%;
+    }
 	}
 	.l-item_cards--desc {
     width: 100%;

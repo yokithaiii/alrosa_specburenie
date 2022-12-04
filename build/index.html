@@ -25,25 +25,19 @@
         <ul>
           <li>
             <a href="#">
-              <svg class="svg">
-                <use xlink:href="./img/sprite.svg#css--email-icon"></use>
-              </svg>
+              <i class="email"></i>
               asb@alrosa.ru
             </a>
           </li>
           <li>
             <a href="#">
-              <svg class="svg">
-                <use xlink:href="./img/sprite.svg#css--tel-icon"></use>
-              </svg>
+              <i class="phone"></i>
               +7 (914) 259-32-85
             </a>
           </li>
           <li>
             <a href="#">
-              <svg class="svg">
-                <use xlink:href="./img/sprite.svg#css--geo-icon"></use>
-              </svg>
+              <i class="point"></i>
               г. Мирный, 678174 ул. Ленина, д. 44Б
             </a>
           </li>
@@ -59,28 +53,360 @@
       <div class="l-header_nav">
         <nav>
           <ul class="flex">
-            <li><a class="fs18-medium" href="#">Об обществе</a></li>
-            <li><a class="fs18-medium" href="#">Проекты</a></li>
-            <li><a class="fs18-medium" href="#">Услуги</a></li>
-            <li><a class="fs18-medium" href="#">Новости</a></li>
-            <li><a class="fs18-medium" href="#">Карьера</a></li>
-            <li><a class="fs18-medium" href="#">Контакты</a></li>
+            <li>
+              <a class="fs18-medium js-header-dropdown__btn" href="#" data-dropdown="content-1">Об обществе</a>
+            </li>
+            <li>
+              <a class="fs18-medium js-header-dropdown__btn" href="#" data-dropdown="content-2">Проекты</a>
+            </li>
+            <li>
+              <a class="fs18-medium js-header-dropdown__btn" href="#" data-dropdown="content-3">Услуги</a>
+            </li>
+            <li>
+              <a class="fs18-medium js-header-dropdown__btn" href="#" data-dropdown="content-4">Новости</a>
+            </li>
+            <li>
+              <a class="fs18-medium js-header-dropdown__btn" href="#" data-dropdown="content-5">Карьера</a>
+            </li>
+            <li>
+              <a class="fs18-medium js-header-dropdown__btn" href="#" data-dropdown="content-6">Контакты</a>
+            </li>
           </ul>
+          <div class="js-header-dropdown__content">
+            <div class="l-container">
+              <div class="l-header-dropdown__container" id="content-1">
+                <div class="l-block">
+                  <h3 class="fs40">Об обществе</h3>
+                  <p class="fs18-regular">Lorem ipsum dolor sit amet consectetur. Pellentesque porta netus senectus
+                    varius vulputate. Quisque integer curabitur sagittis et augue. Eget vel interdum nibh dui urna ut.
+                    Potenti viverra leo nisi mattis lectus mattis sed enim at.</p>
+                  <a class="fs16-medium orange-border-btn" href="#">В раздел</a>
+                </div>
+                <div class="l-block">
+                  <ul class="l-header-dropdown__nav menu vertical" data-disable-hover='true' data-click-open='true'
+                    data-responsive-menu="accordion medium-dropdown">
+                    <li>
+                      <a href="#">
+                        <span class="fs18-bold">О нас</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <span class="fs18-bold">Миссия и стратегия</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <span class="fs18-bold">Структура общества</span>
+                        <i class="--svg__orange-arrow-down"></i>
+                      </a>
+                      <ul class="submenu">
+                        <li>
+                          <a href="#" class="fs18-bold">Айхальская геологоразведочная партия</a>
+                        </li>
+                        <li>
+                          <a href="#" class="fs18-bold">Западно-Якутская геологоразведочная партия</a>
+                        </li>
+                        <li>
+                          <a href="#" class="fs18-bold">База производственно-технического обеспечения и комплектации</a>
+                        </li>
+                        <li>
+                          <a href="#" class="fs18-bold">Топогеодезический участок</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <span class="fs18-bold">Наши специалисты</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <span class="fs18-bold">Наши достижения</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <span class="fs18-bold">Общественная жизнь</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <span class="fs18-bold">Партнеры и клиенты</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <span class="fs18-bold">Сертификаты и лицензии</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <a href="javascript:void(0)" class="l-close-btn">
+                  <i class="close-btn"></i>
+                </a>
+              </div>
+
+              <div class="l-header-dropdown__container" id="content-2">
+                <div class="l-block">
+                  <h3 class="fs40">Проекты</h3>
+                  <p class="fs18-regular">Lorem ipsum dolor sit amet consectetur. Pellentesque porta netus senectus
+                    varius vulputate. Quisque integer curabitur sagittis et augue. Eget vel interdum nibh dui urna ut.
+                    Potenti viverra leo nisi mattis lectus mattis sed enim at.</p>
+                  <a class="fs16-medium orange-border-btn" href="#">В раздел</a>
+                </div>
+                <div class="l-block">
+                  <ul class="l-header-dropdown__nav">
+                    <li>
+                      <a href="#">
+                        <span class="fs18-bold">О нас</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <span class="fs18-bold">Миссия и стратегия</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <span class="fs18-bold">Структура общества</span>
+                        <i class="--svg__orange-arrow-down"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <span class="fs18-bold">Наши специалисты</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <span class="fs18-bold">Наши достижения</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <span class="fs18-bold">Общественная жизнь</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <span class="fs18-bold">Партнеры и клиенты</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <span class="fs18-bold">Сертификаты и лицензии</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <a href="javascript:void(0)" class="l-close-btn">
+                  <i class="close-btn"></i>
+                </a>
+              </div>
+
+              <div class="l-header-dropdown__container" id="content-3">
+                <div class="l-block">
+                  <h3 class="fs40">Услуги</h3>
+                  <p class="fs18-regular">Lorem ipsum dolor sit amet consectetur. Pellentesque porta netus senectus
+                    varius vulputate. Quisque integer curabitur sagittis et augue. Eget vel interdum nibh dui urna ut.
+                    Potenti viverra leo nisi mattis lectus mattis sed enim at.</p>
+                  <a class="fs16-medium orange-border-btn" href="#">В раздел</a>
+                </div>
+                <div class="l-block">
+                  <ul class="l-header-dropdown__nav">
+                    <li>
+                      <a href="#">
+                        <span class="fs18-bold">О нас</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <span class="fs18-bold">Миссия и стратегия</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <span class="fs18-bold">Структура общества</span>
+                        <i class="--svg__orange-arrow-down"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <span class="fs18-bold">Наши специалисты</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <a href="javascript:void(0)" class="l-close-btn">
+                  <i class="close-btn"></i>
+                </a>
+              </div>
+            </div>
+          </div>
         </nav>
       </div>
       <div class="l-header_btns">
         <ul class="flex --align-center">
-          <li><a href="#"><img class="search-icon" src="/img/sprite.svg#css--search"></a></li>
-          <li><a class="fs16-medium orange-btn" data-hystmodal="#modalCallMe" href="#">Заказать звонок</a></li>
+          <li>
+            <a href="#">
+              <i class="search"></i>
+            </a>
+          </li>
+          <li><a class="fs16-medium orange-btn" href="#">Заказать звонок</a></li>
         </ul>
       </div>
       <div class="l-header_mob--menu">
-        <a href="#">i am menu!</a>
+        <div class="burger" id='burger'>
+          <div class="burger-btn">
+            <span></span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+  <div class="table-header__container">
+    <div class="l-container">
+      <div class="search-bar">
+        <label>
+          <input type="text" placeholder="Введите ваш запрос...">
+          <a href="#" class="search-icon">
+            <i class="search"></i>
+          </a>
+
+        </label>
+      </div>
+      <div class="table-header__nav">
+
+        <ul>
+          <li>
+            <a href="#">Об обществе</a>
+          </li>
+          <li>
+            <a href="#">Миссия и стратегия</a>
+          </li>
+          <li>
+            <a href="#">Структура общества</a>
+          </li>
+          <li>
+            <a href="#">Наши специалисты</a>
+          </li>
+          <li>
+            <a href="#">Наши достижения</a>
+          </li>
+          <li>
+            <a href="#">Общественная жизнь</a>
+          </li>
+          <li>
+            <a href="#">Партнеры и клиенты</a>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <a href="#">Проекты</a>
+          </li>
+          <li>
+            <a href="#">Буровые работы</a>
+          </li>
+          <li>
+            <a href="#">Инженерные изыскания</a>
+          </li>
+          <li>
+            <a href="#">Топогеодезические работы</a>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <a href="#"> Карьера</a>
+          </li>
+          <li>
+            <a href="#"> Корпоративная культура</a>
+          </li>
+          <li>
+            <a href="#"> Молодым специалистам</a>
+          </li>
+          <li>
+            <a href="#"> Социальные программы </a>
+          </li>
+        </ul>
+        <ul class="not-childs-items">
+          <li>
+            <a href="#"> Услуги</a>
+          </li>
+          <li>
+            <a href="#"> Новости</a>
+          </li>
+          <li>
+            <a href="#"> Контакты</a>
+          </li>
+          <li>
+            <div class="call-us">
+              <a href="#">Заказать звонок</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="mob-header__nav">
+        <ul class="l-accordion-mob vertical menu accordion-menu" data-accordion-menu>
+          <li>
+            <a href="#">Об обществе</a>
+            <ul class="menu vertical nested">
+              <li><a href="#">Миссия и стратегия</a></li>
+              <li><a href="#">Структура общества</a></li>
+              <li><a href="#">Структура общества</a></li>
+              <li><a href="#">Структура общества</a></li>
+              <li><a href="#">Структура общества</a></li>
+              <li><a href="#">Структура общества</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Проекты</a></li>
+          <li><a href="#">Услуги</a></li>
+          <li><a href="#">Новости</a></li>
+          <li>
+            <a href="#">Карьера</a>
+            <ul class="menu vertical nested">
+              <li><a href="#">Миссия и стратегия</a></li>
+              <li><a href="#">Структура общества</a></li>
+              <li><a href="#">Структура общества</a></li>
+              <li><a href="#">Структура общества</a></li>
+              <li><a href="#">Структура общества</a></li>
+              <li><a href="#">Структура общества</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+        <div class="call-us">
+          <a href="#">Заказать звонок</a>
+        </div>
+      </div>
+      <div class="table-header__contacts">
+        <ul>
+          <li>
+            <a href="#">
+              <i class="email"></i>
+              asb@alrosa.ru
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="phone"></i>
+              +7 (914) 259-32-85
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="point"></i>
+              г. Мирный, 678174 ул. Ленина, д. 44Б
+            </a>
+          </li>
+        </ul>
       </div>
     </div>
+
   </div>
 </header>
-
 	<main class="main">
 		<section class="banner">
 			<div class="swiper swiper-banner">

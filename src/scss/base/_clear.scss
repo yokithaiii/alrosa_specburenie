@@ -1,0 +1,20 @@
+.tabs-content {
+  border: none;
+  background: none;
+}
+
+.tabs {
+  border: none;
+  background: none;
+}
+
+.tabs-title>a {
+  padding: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.tabs-title>a:focus, .tabs-title>a:hover, .tabs-title>a[aria-selected=true] {
+  background: none;
+  color: inherit
+}

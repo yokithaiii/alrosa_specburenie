@@ -51,6 +51,9 @@ section.banner {
 }
 
 section.licenses {
+  .swiper-wrapper {
+    height: auto;
+  }
   .l-banner-navigation {
     width: auto;
     height: 50px;
