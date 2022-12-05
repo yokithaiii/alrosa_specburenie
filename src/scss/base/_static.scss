@@ -66,6 +66,7 @@
     }
 	}
 }
+
 //--accordion
 .item--accordion {
   margin-bottom: 100px;
@@ -115,6 +116,27 @@
     }
     &:last-child {
       margin-bottom: 0;
+    }
+	}
+  .l-content_left--list {
+    margin-top: 32px;
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    li {
+      position: relative;
+      padding-left: 126px;
+      margin-bottom: 23px;
+      color: $gray;
+      &::before {
+        content: '';
+        width: 90px;
+        height: 4px;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        background-color: $orange;
+      }
     }
 	}
 	a.accordion-title {
