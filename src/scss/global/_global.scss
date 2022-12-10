@@ -205,6 +205,11 @@ input[type="checkbox"] {
   background: #FF9704;
   border-radius: 100px;
   color: $white;
+	transition: .4s;
+	&:hover {
+		background: #fdca22;
+		color: $white;
+	}
 }
 
 .orange-border-btn {
@@ -212,7 +217,7 @@ input[type="checkbox"] {
   border: 2px solid #FF9704;
   border-radius: 100px;
   color: $white;
-	transition: .3s;
+	transition: .4s;
 	&:hover {
 		border-color: #FF9704;
 		background: #FF9704;

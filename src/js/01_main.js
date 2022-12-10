@@ -6,7 +6,10 @@ $(document).foundation();
 const headerDropdownBtns = document.querySelectorAll(
   ".js-header-dropdown__btn"
 );
-const headerDropdownContent = document.querySelector(
+const headerDropdownWrapper = document.querySelector(
+  ".l-header_wrapper"
+);
+const headerDropdownContent = document.querySelectorAll(
   ".js-header-dropdown__content"
 );
 const headerDropdownContentItem = document.querySelectorAll(
@@ -16,12 +19,20 @@ const header = document.querySelector(".header");
 const headerIcons = document.querySelectorAll(".js-icons");
 
 headerDropdownBtns.forEach((el) => {
-  el.addEventListener("click", openDropdown);
+  el.addEventListener("mouseenter", openDropdown);
 });
+
+headerDropdownContent.forEach((el) => {
+  el.addEventListener("mouseleave", closeDropdown);
+});
+
+// headerDropdownContent.addEventListener('mouseleave', closeDropdown);
 
 function openDropdown(el) {
   let btnTarget = el.currentTarget;
   let tab = btnTarget.dataset.dropdown;
+
+  $('.hystmodal__shadow').css('opacity', '.6');
 
   // deleted orange border
   headerDropdownBtns.forEach((el) => {
@@ -39,7 +50,10 @@ function openDropdown(el) {
 
   document.querySelector("#" + tab).classList.add("active");
 
-  headerDropdownContent.classList.add("active");
+  headerDropdownContent.forEach((el) => {
+    el.classList.add("active");
+  });
+  // headerDropdownContent.classList.add("active");
 
   header.classList.add("active-header");
 
@@ -47,24 +61,69 @@ function openDropdown(el) {
     headerIcons.forEach((el) => {});
     document.querySelector(".l-header_logo").children[0].children[0].src =
       "/local/templates/alrosa/dist/img/sprite.svg#css--logo-bl";
+    document.querySelector(".search-icon").src =
+      "/local/templates/alrosa/dist/img/sprite.svg#css--search-bl";
     btnTarget.classList.add("active");
   } else {
 
   }
 }
 
+function closeDropdown(el) {
+  let relatedTarget = el.relatedTarget;
+  
+  if (relatedTarget == header || relatedTarget == headerDropdownWrapper) {
+    return;
+  }
+  $('.hystmodal__shadow').css('opacity', '0');
+  header.classList.remove("active-header");
+  // headerDropdownContent.classList.remove("active");
+  headerDropdownContent.forEach((el) => {
+    el.classList.remove("active");
+  });
+  headerDropdownContentItem.forEach((el) => {
+    el.classList.remove("active");
+  });
+  headerDropdownBtns.forEach((el) => {
+    el.classList.remove("active");
+  });
+  if (header.classList.contains("header_white")) {
+    document.querySelector(".l-header_logo").children[0].children[0].src =
+      "/local/templates/alrosa/dist/img/sprite.svg#css--logo-wh";
+    document.querySelector(".search-icon").src =
+      "/local/templates/alrosa/dist/img/sprite.svg#css--search";
+  } else {
+    document.querySelector(".l-header_logo").children[0].children[0].src =
+      "/local/templates/alrosa/dist/img/sprite.svg#css--logo-bl";
+    document.querySelector(".search-icon").src =
+      "/local/templates/alrosa/dist/img/sprite.svg#css--search-bl";
+  }
+}
+
 document.querySelectorAll(".l-close-btn").forEach((el) => {
   el.addEventListener("click", function () {
     header.classList.remove("active-header");
-    headerDropdownContent.classList.remove("active");
+    // headerDropdownContent.classList.remove("active");
+    headerDropdownContent.forEach((el) => {
+      el.classList.remove("active");
+    });
     headerDropdownContentItem.forEach((el) => {
       el.classList.remove("active");
     });
     headerDropdownBtns.forEach((el) => {
       el.classList.remove("active");
     });
-    document.querySelector(".l-header_logo").children[0].children[0].src =
-      "/local/templates/alrosa/dist/img/sprite.svg#css--logo-wh";
+    if (header.classList.contains("header_white")) {
+      document.querySelector(".l-header_logo").children[0].children[0].src =
+        "/local/templates/alrosa/dist/img/sprite.svg#css--logo-wh";
+      document.querySelector(".search-icon").src =
+        "/local/templates/alrosa/dist/img/sprite.svg#css--search";
+    } else {
+      document.querySelector(".l-header_logo").children[0].children[0].src =
+        "/local/templates/alrosa/dist/img/sprite.svg#css--logo-bl";
+      document.querySelector(".search-icon").src =
+        "/local/templates/alrosa/dist/img/sprite.svg#css--search-bl";
+    }
   });
 });
 
@@ -103,12 +162,17 @@ function openTableMenu(el) {
 //main
 const swiperBanner = new Swiper('.swiper-banner', {
   loop: true,
+  speed: 800,
   pagination: {
     el: '.swiper-pagination',
+    clickable: 'true',
   },
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
+  },
+  autoplay: {
+    delay: 5000,
   },
 });
 
@@ -119,8 +183,10 @@ const swiperLicense = new Swiper('.swiper-license', {
   loopFillGroupWithBlank: true,
   slidesPerView: 6,
   spaceBetween: 20,
+  speed: 400,
   pagination: {
     el: '.swiper-pagination',
+    clickable: 'true',
   },
   navigation: {
     nextEl: '.swiper-button-next',
@@ -174,8 +240,10 @@ var swiperThumbs = new Swiper(".swiper-thumbs", {
 const swiperNewsDetail = new Swiper('.swiper-newsdetail', {
   loop: true,
   slidesPerView: 1,
+  speed: 800,
   pagination: {
     el: '.swiper-pagination',
+    clickable: 'true',
   },
   navigation: {
     nextEl: '.swiper-button-next',
@@ -214,8 +282,10 @@ var swiperThumbs = new Swiper(".swiper-thumbs-presentation", {
 const swiperPresentation = new Swiper('.swiper-presentation', {
   loop: true,
   slidesPerView: 1,
+  speed: 800,
   pagination: {
     el: '.swiper-pagination',
+    clickable: 'true',
   },
   navigation: {
     nextEl: '.swiper-button-next',
@@ -250,8 +320,10 @@ var pworksThumbs = new Swiper(".swiper-thumbs-pworks", {
 const swiperPworks = new Swiper('.swiper-pworks', {
   loop: true,
   slidesPerView: 1,
+  speed: 800,
   pagination: {
     el: '.swiper-pagination',
+    clickable: 'true',
   },
   navigation: {
     nextEl: '.swiper-button-next',

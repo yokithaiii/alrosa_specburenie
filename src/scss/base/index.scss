@@ -485,7 +485,7 @@ section.services {
     line-height: 28px;
     &:focus {
       border: 2px solid #FFE0B4;
-      box-shadow: 0 0 5px 1px #ffe0b4;
+      box-shadow: 0 0 15px 2px #ffe0b4;
     }
   }
   textarea {
@@ -500,12 +500,12 @@ section.services {
     resize: vertical;
     &:focus {
       border: 2px solid #FFE0B4;
-      box-shadow: 0 0 5px 1px #ffe0b4;
+      box-shadow: 0 0 15px 2px #ffe0b4;
     }
   }
   label {
     font-weight: 600;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 24px;
     color: #5A5A5A;
   }
