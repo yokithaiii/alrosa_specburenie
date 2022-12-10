@@ -334,6 +334,17 @@ const swiperPworks = new Swiper('.swiper-pworks', {
   },
 });
 
+//map
+const swiperMap = new Swiper('.map-swiper', {
+  loop: true,
+  slidesPerView: 1,
+  speed: 800,
+  spaceBetween: 20,
+  autoplay: {
+    delay: 3000,
+  },
+});
+
 // services open detail from asper
 const servicesOpenDetailBtn = document.querySelectorAll(".l-services-open");
 
