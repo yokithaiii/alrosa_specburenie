@@ -374,12 +374,31 @@ vacanciesOpenDetailBtn.forEach((el) => {
 function openFadeDetail2(el) {
   let btnTarget = el.currentTarget;
   btnTarget.classList.toggle("active");
+  if (btnTarget.classList.contains('active')) {
+    btnTarget.children[0].innerText = 'Показать меньше';
+  } else {
+    btnTarget.children[0].innerText = 'Показать больше';
+  }
   btnTarget.parentElement.children[2].classList.toggle("active");
 }
 
 function openTestNav() {
   document.querySelector('.test--nav').classList.toggle('test-active');
   document.querySelector('.test--trigger').classList.toggle('test-active');
+}
+
+// structure open detail from asper
+const structureOpenDetailBtn = document.querySelectorAll(".l-structure-open");
+
+structureOpenDetailBtn.forEach((el) => {
+  el.addEventListener("click", openFadeDetail3);
+});
+
+function openFadeDetail3(el) {
+  let btnTarget = el.currentTarget;
+  btnTarget.classList.toggle("active");
+  console.dir(btnTarget);
+  btnTarget.parentElement.parentElement.children[4].classList.toggle("active");
 }
 
 //modals
